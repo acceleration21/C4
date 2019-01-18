@@ -50,8 +50,32 @@ int main(){
             scanf("%c",&x);
         }
          if (code == 2) {
+             if (index >= 1)
+            {
+                index--;
+                printf("删除成功回车继续\n");
+                char x;
+                scanf("%c", &x);
+                scanf("%c", &x);
+            }
+            else
+            {
+                printf("删除失败，回车继续\n");
+                char x;
+                scanf("%c", &x);
+                scanf("%c", &x);
+            }
         }
          if (code == 3) {
+             for (int i = 0; i < index; i++)
+            {
+                printf("第%d个学生的姓名为%s，语文成绩为：%d，数学成绩为%d，英语成绩为%d\n", i + 1, arr[i].name, arr[i].yuwen, arr[i].shuxue, arr[i].yingyu);
+            }
+
+            printf("回车继续\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
          if (code == 4) {
         }
